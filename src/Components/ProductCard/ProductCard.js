@@ -1,8 +1,29 @@
 import React from 'react';
+import Btn from '../Button/Btn';
+import './ProductCard.css'
 
-const ProductCard = () => {
+const ProductCard = ({heading,src,paragraph,bgColor,textAlign}) => {
   return <div className='productcard'>
-           <img class="smart-media smart-image-default lazyload-fade lazyloaded" data-src="//cdn.shopify.com/s/files/1/0667/0133/files/lastchancejan22-highres_1400x.jpg?v=1643853035" alt="Last Chance" src="//cdn.shopify.com/s/files/1/0667/0133/files/lastchancejan22-highres_1400x.jpg?v=1643853035"></img>
+          <div className="productCard__img">
+          <img src={src}/>
+          </div>
+           <div className={`productCard__content ${textAlign}`}>
+               <h2>
+                   {heading}
+               </h2>
+               <p>
+                   {paragraph}
+               </p>
+               <Btn
+                text='SHOP WOMEN'
+                bgColor={bgColor}
+               />
+               <Btn
+                text='SHOP MEN'
+                bgColor={bgColor}
+               />
+           </div>
+           
   </div>;
 };
 
