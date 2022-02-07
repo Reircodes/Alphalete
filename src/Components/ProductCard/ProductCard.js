@@ -1,11 +1,14 @@
 import React from 'react';
+import  Video from '../Video/Video';
 import Btn from '../Button/Btn';
 import './ProductCard.css'
 
-const ProductCard = ({heading,src,paragraph,bgColor,textAlign}) => {
+const ProductCard = ({heading,src,paragraph,bgColor,textAlign, format}) => {
   return <div className='productcard'>
           <div className="productCard__img">
-          <img src={src}/>
+              {format == 'image' ? <img src={src}/>  : <Video src={src}/>  }
+          
+         
           </div>
            <div className={`productCard__content ${textAlign}`}>
                <h2>

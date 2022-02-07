@@ -2,9 +2,7 @@
     position: relative;
 }
 
-.productCard__img {
-    box-shadow: inset 0 0 100px;
-}
+.productCard__img {}
 
 .left {
     text-align: left;
