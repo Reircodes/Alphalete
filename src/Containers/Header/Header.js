@@ -12,7 +12,7 @@ const Header = () => {
                
        <div className="header__container-productcards">
          
-       <div className='productcard-one'>
+       {/* <div className='productcard-one'>
                  <ProductCard
                   heading='NEW ARRIVALS'
                   paragraph=''
@@ -22,7 +22,7 @@ const Header = () => {
                   textAlign='left'
                   format= 'video'
                   />
-                 </div>
+                 </div> */}
                 <div className='productcard-two'>
                 <ProductCard
                     heading = 'LAST CHANCE'
@@ -34,6 +34,16 @@ const Header = () => {
                     format= 'image'/>
                 </div>
                   <div className='productcard-three'>
+                  <ProductCard
+                       heading='BEST SELLERS'
+                       paragraph='Pieces that speak for themselves'
+                       src='//cdn.shopify.com/s/files/1/0667/0133/files/VeryTerryStudio_079-port_1400x.jpg?v=1643390863'
+                       bgColor= 'brown-bg'
+                       key='2'
+                       textAlign='right'
+                       format= 'image'/>
+                  </div>
+                  <div className='productcard-one'>
                   <ProductCard
                        heading='BEST SELLERS'
                        paragraph='Pieces that speak for themselves'

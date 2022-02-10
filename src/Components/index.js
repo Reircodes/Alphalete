@@ -4,3 +4,5 @@ export { default as Btn }
 from './Button/Btn'
 export { default as Video }
 from './Video/Video'
+export { default as Product }
+from './Product/Product'

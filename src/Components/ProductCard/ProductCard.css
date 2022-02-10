@@ -1,5 +1,9 @@
 .productcard {
     position: relative;
+    width: 100%;
+    height: 800px;
+    object-fit: contain;
+    border-radius: 35px;
 }
 
 .productCard__img {}
@@ -17,6 +21,7 @@
     width: 100%;
     border-radius: 35px;
     box-shadow: inset 0 0 100px;
+    height: 600px;
 }
 
 .productCard__content {
@@ -47,6 +52,20 @@
     }
     .productCard__content>p {
         margin-bottom: 9px;
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .productcard {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .productCard__content>h2 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .productCard__content>p {
+        margin-bottom: 12px;
+        font-size: 12px;
     }
 }

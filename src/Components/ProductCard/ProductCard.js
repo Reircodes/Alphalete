@@ -4,10 +4,10 @@ import Btn from '../Button/Btn';
 import './ProductCard.css'
 
 const ProductCard = ({heading,src,paragraph,bgColor,textAlign, format}) => {
-  return <div className='productcard'>
-          <div className="productCard__img">
-              {format == 'image' ? <img src={src}/>  : <Video src={src}/>  }
-          
+  return <div className='productcard' style={{ backgroundImage: `url(${src})` , backgroundSize: 'cover'}} >
+          <div className="productCard__img"  >
+             
+
          
           </div>
            <div className={`productCard__content ${textAlign}`}>

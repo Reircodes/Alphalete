@@ -3,21 +3,11 @@
 .header__container-productcards {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.productcard-one {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
+.productcard-two {}
 
-.productcard-two {
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
+.productcard-three {}
 
-.productcard-three {
-    grid-column: 3/5;
-    grid-row: 1/3 !important;
-}
+.productcard-one {}
